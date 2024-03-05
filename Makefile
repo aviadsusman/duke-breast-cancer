@@ -15,5 +15,4 @@ duke:
 	wget -nc -P data/raw/duke https://wiki.cancerimagingarchive.net/download/attachments/70226903/Imaging_Features.xlsx 
 	wget -nc -P data/raw/duke https://wiki.cancerimagingarchive.net/download/attachments/70226903/Annotation_Boxes.xlsx
 	wget -nc -P data/raw/duke https://wiki.cancerimagingarchive.net/download/attachments/70226903/Duke-Breast-Cancer-MRI_v2_20220609.tcia
-	sudo $(addprefix $(NBIADataRetriever_path)/, NBIADataRetriever) --cli $(addprefix $(current_dir)/, data/raw/duke/Duke-Breast-Cancer-MRI_v2_20220609.tcia) -d /$(addprefix $(current_dir)/, data/raw/duke) -l $(addprefix $(current_dir)/, NBIADataRetriever_credentials.txt)
-
+	sudo $(addprefix $(NBIADataRetriever_path)/, NBIADataRetriever) --cli $(addprefix $(current_dir)/, Duke-Breast-Cancer-MRI_v2_20220609.tcia) -d /$(addprefix $(current_dir)/, data/raw/duke) -l $(addprefix $(current_dir)/, NBIADataRetriever_credentials.txt)
